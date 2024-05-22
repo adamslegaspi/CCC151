@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./AddScreen.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,500;0,800;1,600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="add-screen">
+      <header class="frame-header">
+        <div class="frame-child1"></div>
+        <div class="contact-us-frame">
+          <h3 class="contact-us2">Contact Us</h3>
+        </div>
+        <h3 class="about-us2">About Us</h3>
+        <h3 class="help2">Help</h3>
+      </header>
+      <section class="frame-section">
+        <div class="image-4-container">
+          <img
+            class="image-4-icon2"
+            loading="lazy"
+            alt=""
+            src="./public/image-4@2x.png"
+          />
+
+          <div class="rectangle-parent1">
+            <div class="frame-child2"></div>
+            <h3 class="pest-control-buddy-container2">
+              <span>Pest</span>
+              <span class="control-buddy2"> Control Buddy</span>
+            </h3>
+            <div class="button-frame4" id="buttonFrame"></div>
+            <div class="frame-wrapper1">
+              <div class="advanced-container">
+                <div class="advanced2">Advanced</div>
+                <div class="frame-parent1">
+                  <div class="button-wrapper1">
+                    <div class="button6">
+                      <div class="add-new2">Add New</div>
+                    </div>
+                  </div>
+                  <div class="button-frame-frame">
+                    <div class="button-frame5" id="buttonFrameContainer">
+                      <div class="button7">
+                        <div class="remove2">Remove</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="settings2">Settings</div>
+                  <div class="button-wrapper2">
+                    <div class="button8" id="buttonContainer">
+                      <div class="log-out2">Log Out</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-and-button-wrapper">
+          <div class="input-and-button">
+            <div class="password">
+              <div class="turret-id">Turret ID</div>
+              <div class="field">
+                <input class="label" placeholder="Turret ID" type="text" />
+              </div>
+            </div>
+            <button class="button9" id="button">
+              <div class="sign-up">Sign up</div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var button = document.getElementById("button");
+      if (button) {
+          button.addEventListener("click", function (e) {
+              // Retrieve the input value
+              var turretIdInput = document.querySelector(".label").value;
+  
+              // Check if localStorage contains the removed turrets
+              var removedTurrets = localStorage.getItem("removedTurrets");
+  
+              // Redirect to MainMenu.html with removedTurrets as query parameter
+              window.location.href = "./MainMenu.html?removedTurrets=" + removedTurrets + "&turretIdInput=" + turretIdInput;
+          });
+      }
+  
+      var buttonFrame = document.getElementById("buttonFrame");
+      if (buttonFrame) {
+          buttonFrame.addEventListener("click", function (e) {
+              window.location.href = "./MainMenu.html";
+          });
+      }
+  
+      var buttonFrameContainer = document.getElementById("buttonFrameContainer");
+      if (buttonFrameContainer) {
+          buttonFrameContainer.addEventListener("click", function (e) {
+              window.location.href = "./RemoveScreen.html";
+          });
+      }
+  
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+          buttonContainer.addEventListener("click", function (e) {
+              window.location.href = "./LogInScreen.html";
+          });
+      }
+  </script>
+    </body>
+</html>
