@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,400;0,500;0,600;0,800;1,600&display=swap"
+    />
+  </head>
+  <body>
+    <div class="start-screen">
+      <main class="social-login">
+        <section class="social-login-child"></section>
+        <div class="button" id="buttonContainer">
+          <div class="start">Start</div>
+        </div>
+      </main>
+      <div class="layout">
+        <div class="layout-child"></div>
+        <div class="layout-item"></div>
+        <img
+          class="ratpoint-1-icon"
+          loading="lazy"
+          alt=""
+          src="151images/RatPoint.png"
+        />
+      </div>
+      <header class="social-login1">
+        <div class="social-login-item"></div>
+        <div class="rat-icon-container">
+          <img
+            class="raticon-1"
+            loading="lazy"
+            alt=""
+            src="151images/raticon.png"
+          />
+
+          <div class="pest-control-buddy-wrapper">
+            <i class="pest-control-buddy-container">
+              <span>Pest</span>
+              <span class="control-buddy"> Control Buddy</span>
+            </i>
+          </div>
+        </div>
+        <div class="pwoerbutton-wrapper">
+          <img
+            class="pwoerbutton-icon"
+            loading="lazy"
+            alt=""
+            src="151images/powerbutton.png"
+          />
+        </div>
+      </header>
+    </div>
+
+    <script>
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+          window.location.href = "./LogInScreen.html";
+        });
+      }
+      </script>
+  </body>
+</html>

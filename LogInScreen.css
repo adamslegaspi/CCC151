@@ -1,0 +1,400 @@
+.frame-child2 {
+  height: 217px;
+  width: 1920px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.raticon-2 {
+  height: 201px;
+  width: 201px;
+  position: relative;
+  object-fit: contain;
+  z-index: 3;
+}
+.control-buddy3 {
+  color: var(--color-black);
+}
+.pest-control-buddy-container3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 600;
+  font-family: inherit;
+  white-space: nowrap;
+  z-index: 3;
+}
+.pest-control-buddy-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 70px 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.background-shapes-child,
+.frame-header {
+  position: absolute;
+  left: 0;
+  background-color: var(--color-white);
+}
+.frame-header {
+  top: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 6px var(--padding-4xs);
+  gap: 6px;
+  max-width: 100%;
+  z-index: 2;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-red-100);
+  font-family: var(--presets-body2);
+}
+.background-shapes-child {
+  top: 381.39px;
+  border-radius: 50%;
+  width: 1729.4px;
+  height: 1420.2px;
+  transform: rotate(-33deg);
+  transform-origin: 0 0;
+  z-index: 1;
+}
+.ratkill-icon {
+  position: absolute;
+  top: 217px;
+  left: 359px;
+  width: 1273px;
+  height: 1138px;
+  object-fit: cover;
+  z-index: 2;
+}
+.background-shapes {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 284px;
+  width: 1632px;
+}
+.frame-child3 {
+  align-self: stretch;
+  height: 1080px;
+  position: relative;
+  background-color: var(--color-gainsboro-200);
+  display: none;
+}
+.username2 {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  z-index: 1;
+}
+.username-field {
+  width: 363px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-60xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.label3 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: var(--presets-body2);
+  font-size: var(--body-text-size);
+  background-color: transparent;
+  height: 30px;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  color: var(--color-gray-100);
+  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 221px;
+  max-width: 100%;
+  padding: 0;
+}
+.field2 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) var(--padding-mini);
+  max-width: 100%;
+  z-index: 2;
+}
+.password2 {
+  flex: 1;
+  position: relative;
+  font-size: var(--presets-body2-size);
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--presets-body2);
+  color: var(--color-black);
+  text-align: left;
+  z-index: 1;
+}
+.field-parent,
+.password-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.password-wrapper {
+  width: 208px;
+  flex-direction: row;
+  padding: 0 var(--padding-10xs);
+  box-sizing: border-box;
+}
+.field-parent {
+  align-self: stretch;
+  flex-direction: column;
+  max-width: 100%;
+}
+.label4 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: var(--presets-body2);
+  font-size: var(--body-text-size);
+  background-color: transparent;
+  height: 30px;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  color: var(--color-gray-100);
+  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 221px;
+  max-width: 100%;
+  padding: 0;
+}
+.field3 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) var(--padding-mini);
+  max-width: 100%;
+  z-index: 2;
+}
+.log-in {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 38px;
+  font-weight: 800;
+  font-family: var(--presets-body2);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+  min-width: 75px;
+}
+.button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xs-5) var(--padding-xl);
+  background-color: var(--color-black);
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+.button2:hover {
+  background-color: var(--color-darkslategray-100);
+}
+.field-group,
+.frame-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.field-group {
+  flex: 1;
+  flex-direction: column;
+  gap: 19px;
+}
+.frame-container {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 5px var(--padding-10xs);
+  box-sizing: border-box;
+}
+.no-account {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  font-weight: 100;
+  font-family: var(--presets-body2);
+  color: var(--color-black);
+  text-align: left;
+  z-index: 1;
+}
+.no-account-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 10px;
+}
+.create-one {
+  height: 47px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-6xl);
+  font-weight: 500;
+  font-family: var(--presets-body2);
+  color: #1b82fb;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button3,
+.frame-parent1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.button3 {
+  border-radius: var(--br-5xs);
+  background-color: transparent;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px var(--padding-10xs);
+  box-sizing: border-box;
+  min-width: 105px;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 2;
+}
+.frame-parent1 {
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  row-gap: 20px;
+}
+.frame-wrapper1 {
+  width: 381px;
+  flex-direction: row;
+  padding: 0 var(--padding-18xl);
+  box-sizing: border-box;
+}
+.frame-group,
+.frame-wrapper1,
+.password-field {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frame-group {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.password-field {
+  width: 561px;
+  flex-direction: row;
+  padding: 0 var(--padding-60xl) 251px;
+  box-sizing: border-box;
+}
+.backbutton-icon1 {
+  width: 73px;
+  height: 73px;
+  position: relative;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.login-container,
+.rectangle-parent1 {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+}
+.rectangle-parent1 {
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  width: 973px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 468px 0 var(--padding-9xs);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+}
+.login-container {
+  left: 4px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: var(--presets-body2-size);
+  color: var(--color-black);
+  font-family: var(--presets-body2);
+}
+.log-in-screen {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 450px) {
+  .label3,
+  .label4 {
+    font-size: var(--presets-body2-size);
+    line-height: 24px;
+  }
+  .no-account {
+    font-size: var(--body-text-size);
+  }
+  .log-in-screen,
+  .login-container {
+    height: auto;
+    min-height: 1080;
+  }
+}

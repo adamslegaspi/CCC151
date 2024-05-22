@@ -1,0 +1,210 @@
+.social-login-child {
+  width: 1729.4px;
+  height: 1420.2px;
+  position: absolute;
+  margin: 0 !important;
+  right: 267.6px;
+  bottom: -702.69px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  transform: rotate(-30.3deg);
+  transform-origin: 0 0;
+  z-index: 2;
+}
+.start {
+  height: 138px;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 0 0#000, 0 1px 0#000, -1px 0 0#000, 0-1px 0#000;
+}
+.button,
+.social-login {
+  display: flex;
+  box-sizing: border-box;
+}
+.button {
+  width: 258px;
+  border-radius: var(--br-5xs);
+  background-color: rgba(78, 61, 61, 0.2);
+  border: 5px solid #2d2d2d;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+.social-login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 54px 818px;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-white);
+  font-family: var(--presets-body2);
+}
+.layout-child,
+.layout-item {
+  position: absolute;
+  background-color: var(--color-gainsboro-200);
+  width: 973px;
+}
+.layout-child {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.layout-item {
+  top: 22px;
+  left: 947px;
+  height: 1080px;
+  z-index: 1;
+}
+.ratpoint-1-icon {
+  position: absolute;
+  top: 0;
+  left: 306px;
+  width: 1355px;
+  height: 1246px;
+  object-fit: cover;
+  z-index: 4;
+}
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.social-login-item {
+  height: 217px;
+  width: 1920px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.raticon-1 {
+  height: 188px;
+  width: 188px;
+  position: relative;
+  object-fit: cover;
+  z-index: 6;
+}
+.control-buddy {
+  color: var(--color-black);
+}
+.pest-control-buddy-container {
+  position: relative;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 6;
+}
+.pest-control-buddy-wrapper,
+.rat-icon-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.pest-control-buddy-wrapper {
+  flex-direction: column;
+  padding: 63px 0 0;
+  box-sizing: border-box;
+}
+.rat-icon-container {
+  flex-direction: row;
+  gap: 11px;
+}
+.pwoerbutton-icon {
+  width: 101px;
+  height: 101px;
+  position: relative;
+  object-fit: cover;
+  z-index: 6;
+}
+.pwoerbutton-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-24xl) 0 0;
+}
+.social-login1,
+.start-screen {
+  width: 100%;
+  background-color: var(--color-white);
+}
+.social-login1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-smi) 24px var(--padding-xs) var(--padding-mid);
+  gap: var(--gap-xl);
+  max-width: 100%;
+  z-index: 5;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-red-100);
+  font-family: var(--presets-body2);
+}
+.start-screen {
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .social-login {
+    padding-left: var(--padding-390xl);
+    padding-right: var(--padding-390xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .start {
+    font-size: var(--font-size-21xl);
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .social-login {
+    padding-left: var(--padding-185xl);
+    padding-right: var(--padding-185xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .start {
+    font-size: var(--font-size-11xl);
+    line-height: 45px;
+  }
+  .social-login {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

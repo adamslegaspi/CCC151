@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./MainMenu.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,500;0,800;1,600&display=swap" />
+</head>
+<body>
+    <div class="main-menu">
+      <section class="frame-parent">
+        <header class="rectangle-parent">
+          <div class="frame-child"></div>
+          <div class="contact-us-wrapper">
+            <div class="contact-us">Contact Us</div>
+          </div>
+          <div class="about-us">About Us</div>
+          <div class="help">Help</div>
+        </header>
+        <div class="image-4-parent">
+          <img
+            class="image-4-icon"
+            loading="lazy"
+            alt=""
+            src="151images/raticon.png"
+          />
+
+          <div class="rectangle-group">
+            <div class="frame-item"></div>
+            <div class="pest-control-buddy-wrapper">
+              <i class="pest-control-buddy-container">
+                <span>Pest</span>
+                <span class="control-buddy"> Control Buddy</span>
+              </i>
+            </div>
+            <div class="input-and-button">
+              <div class="password">
+                <div class="field">
+                  <input class="label" placeholder="Turret ID" type="text" id="turretId" />
+                </div>
+              </div>
+              <button class="button" onclick="addTurret()">
+                <div class="add-turret">Add Turret</div>
+              </button>
+            </div>
+            <div class="frame-wrapper">
+              <div class="frame-group">
+                <div class="advanced-wrapper">
+                  <div class="advanced">Advanced</div>
+                </div>
+                <div class="button-frame" id="buttonFrameContainer">
+                  <div class="button1">
+                    <div class="remove">Remove</div>
+                  </div>
+                </div>
+                <div class="settings-wrapper">
+                  <div class="settings">Settings</div>
+                </div>
+                <div class="buttons">
+                  <div class="button2" id="buttonContainer">
+                    <div class="log-out">Log Out</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="actions">
+        <div class="turret-1-parent">
+          <div class="turret-1" id="turret1">
+            <div class="turret-1-ammo-710-status-onl-container">
+              <p class="turret-1-ammo-710">Turret 1  Ammo 7/10</p>
+              <p class="blank-line">&nbsp;</p>
+              <p class="status-online">Status Online</p>
+              <p class="blank-line1">&nbsp;</p>
+              <p class="modify">Modify</p>
+              <p class="blank-line2">&nbsp;</p>
+            </div>
+          </div>
+          <div class="turret-2" id="turret2">
+            <div class="turret-2-ammo-1010-status-o-container">
+              <p class="turret-2-ammo">Turret 2  Ammo</p>
+              <p class="status-offline">10/10  Status Offline</p>
+              <p class="blank-line3">&nbsp;</p>
+              <p class="modify1">Modify</p>
+              <p class="blank-line4">&nbsp;</p>
+            </div>
+          </div>
+          <div class="turret-3" id="turret3">
+            <div class="turret-3-ammo-310-status-on-container">
+              <p class="turret-3-ammo-310">Turret 3  Ammo 3/10</p>
+              <p class="status-online1"> Status Online</p>
+              <p class="blank-line5">&nbsp;</p>
+              <p class="modify2">Modify</p>
+              <p class="blank-line6">&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var buttonFrameContainer = document.getElementById("buttonFrameContainer");
+      if (buttonFrameContainer) {
+        buttonFrameContainer.addEventListener("click", function (e) {
+          window.location.href = "./RemoveScreen.html";
+        });
+      }
+      
+      var buttonContainer = document.getElementById("buttonContainer");
+      if (buttonContainer) {
+        buttonContainer.addEventListener("click", function (e) {
+            window.location.href = "./LogInScreen.html";
+        });
+      }
+
+      function addTurret() {
+        var turretId = document.getElementById("turretId").value;
+        if (turretId.trim() !== "") {
+          var removedTurrets = localStorage.getItem("removedTurrets");
+          if (removedTurrets) {
+            var index = removedTurrets.indexOf(turretId);
+            if (index !== -1) {
+              removedTurrets.splice(index, 1);
+              localStorage.setItem("removedTurrets", removedTurrets);
+            }
+          }
+          window.location.reload();
+        }
+      }
+    </script>
+  </body>
+</html>
